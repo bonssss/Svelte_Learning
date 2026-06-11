@@ -1,0 +1,30 @@
+<script>
+import FeedbackList from './components/feedbackList.svelte';
+  
+  let feedback =[
+
+
+  {
+    id:1,
+    rating:10,
+    text:'This is feedback item 1'
+  },
+  {
+    id:2,
+    rating:9,
+    text:'This is feedback item 2'
+  },
+
+  {
+    id:3,
+    rating:8,
+    text:'This is feedback item 3'
+  }
+  ]
+  
+</script>
+
+<main class="container">
+  <FeedbackList {feedback} />
+</main>
+
