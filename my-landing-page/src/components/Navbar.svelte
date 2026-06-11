@@ -160,8 +160,8 @@
 }
 
 .btn.primary {
-  background: linear-gradient(135deg, #0e75f1, #0de7ef);
-  color: #ffffff;
+background: radial-gradient(circle at 20% 20%, rgba(129, 97, 255, 0.26), transparent 20%),
+    radial-gradient(circle at 75% 70%, rgba(58, 176, 255, 0.2), transparent 24%);
   box-shadow: 0 18px 40px rgba(74, 185, 255, 0.22);
 }
 

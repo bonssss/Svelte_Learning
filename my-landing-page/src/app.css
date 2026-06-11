@@ -134,12 +134,12 @@ button {
   align-items: center;
   justify-content: center;
   padding: 1rem 2rem;
-  background: linear-gradient(135deg, #0e75f1, #0de7ef);
-  color: #ffffff;
+background: radial-gradient(circle at 20% 20%, rgba(83, 82, 90, 0.26), transparent 20%),
+    radial-gradient(circle at 75% 70%, rgba(168, 190, 205, 0.2), transparent 50%);
   border-radius: 999px;
   font-weight: 700;
   text-decoration: none;
-  box-shadow: 0 24px 60px rgba(74, 185, 255, 0.24);
+  box-shadow: 0 24px 60px rgba(231, 234, 236, 0.24);
   transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
 }
 
@@ -529,8 +529,8 @@ button {
   border: none;
   border-radius: 999px;
   padding: 1rem 1.3rem;
-  background: linear-gradient(135deg, #0e75f1, #0de7ef);
-  color: #ffffff;
+background: radial-gradient(circle at 20% 20%, rgba(129, 97, 255, 0.26), transparent 20%),
+    radial-gradient(circle at 75% 70%, rgba(58, 176, 255, 0.2), transparent 24%);
   font-weight: 700;
   cursor: pointer;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -569,26 +569,6 @@ button {
 }
 
 @media (max-width: 980px) {
-  .navbar-container {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
-    padding: 1rem 1.25rem;
-  }
-
-  .nav-links {
-    width: 100%;
-    justify-content: center;
-    gap: 1.2rem;
-    flex-wrap: wrap;
-  }
-
-  .nav-actions {
-    width: 100%;
-    justify-content: center;
-    margin-top: 0.75rem;
-  }
-
   .hero-grid {
     grid-template-columns: 1fr;
     gap: 2rem;
@@ -598,31 +578,9 @@ button {
     padding-top: 9rem;
   }
 
-  .hero-copy {
-    text-align: center;
-  }
-
-  .hero-copy .eyebrow {
-    justify-content: center;
-  }
-
-  .hero-button {
-    margin: 0 auto;
-  }
-
-  .hero-cards {
-    width: 100%;
-  }
-
   .trading-grid,
   .contact-grid {
     grid-template-columns: 1fr;
-  }
-
-  .faq-inner,
-  .contact-copy,
-  .trading-copy {
-    text-align: center;
   }
 }
 
@@ -636,14 +594,6 @@ button {
     justify-content: center;
   }
 
-  .nav-links {
-    gap: 0.9rem;
-  }
-
-  .nav-actions {
-    gap: 0.75rem;
-  }
-
   .glass-card {
     padding: 1.5rem;
   }
@@ -652,46 +602,16 @@ button {
     font-size: 1rem;
   }
 
-  .hero-copy h1 {
-    font-size: clamp(2.2rem, 8vw, 3rem);
-  }
-
   .feature-card {
     padding: 1.7rem;
-  }
-
-  .feature-grid {
-    gap: 1rem;
   }
 
   .trading-grid {
     gap: 1rem;
   }
 
-  .contact-grid {
-    grid-template-columns: 1fr;
-  }
-
   .contact-form,
   .contact-info {
     width: 100%;
-  }
-
-  .contact-copy,
-  .faq-inner,
-  .trading-copy {
-    text-align: center;
-  }
-
-  .faq-item {
-    padding: 1.5rem;
-  }
-
-  .faq-question {
-    font-size: 1rem;
-  }
-
-  .faq-answer p {
-    margin-top: 0.75rem;
   }
 }
