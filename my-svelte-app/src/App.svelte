@@ -4,6 +4,9 @@ import FeedBackStat from './components/FeedBackStat.svelte';
 import FeedBackForm from './components/FeedBackForm.svelte';
 import RatingSelect from './components/RatingSelect.svelte';
   
+
+const handleSelect = e => {
+}
   let feedback =[
 
 
@@ -36,7 +39,7 @@ import RatingSelect from './components/RatingSelect.svelte';
 </script>
 
 <main class="container">
-<RatingSelect />
+<RatingSelect  on:rating-select={handleSelect}/>
 <FeedBackForm />
   <FeedBackStat {count} {average} />
   <FeedbackList {feedback} on:delete={deleteFeedback} />
